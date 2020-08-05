@@ -1,0 +1,12 @@
+.header__cart {
+	padding: 30px 30px 0 30px;
+	position: relative;
+	&--count {
+		position: absolute;
+		top: 20px;
+		left: 60px;
+	}
+	&--icon {
+		font-size: 32px;
+	}
+}
