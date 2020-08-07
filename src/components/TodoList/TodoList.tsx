@@ -7,7 +7,14 @@ const todoData: Array<TodoItem> = [
     {id: 2,title: 'complete the ltodo app', isComplete: true}
 ]
 
-const TodoList: React.FC = () => {
+interface john extends React.InputHTMLAttributes<HTMLInputElement> {
+    foo: string,
+    bar: number
+}
+
+const TodoList: React.FC<john> = ({foo,lang}) => {
+
+    console.log(foo,lang);
 
     const [todoState, setTodoState] = useState(todoData);
 

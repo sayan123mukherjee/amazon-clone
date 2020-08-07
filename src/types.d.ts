@@ -11,3 +11,7 @@ type dropDownDataItemType = {
 type dropDownDataType = {
 	names: Array<dropDownDataItemType>;
 };
+
+declare module 'module_name' {
+	export function checkValue(str: string): string;
+}
