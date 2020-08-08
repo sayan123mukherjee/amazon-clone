@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './HeaderSearchBar.scss';
-// import {dropDownDataItemType,dropDownDataType} from '../../../types'
+import {dropDownDataItemType,dropDownDataType} from '../../../types'
 
 const HeaderSearchBar: React.FC<dropDownDataType> = ({names}) => {
 

@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-// import {TodoItem} from '../../types';
+import {TodoItem} from '../../types';
 import TodoListItem from '../TodoList/TodoListItem'
 
 const todoData: Array<TodoItem> = [

@@ -15,12 +15,19 @@ class SuperExample extends React.Component<{},{array:Array<apiData>}>{
             array: []
         }
     }
-    componentWillMount(){
-        fetch('https://jsonplaceholder.typicode.com/users')
+    UNSAFE_componentWillMount(){
+        console.log('will mount')
+        setTimeout(()=> {
+            fetch('https://jsonplaceholder.typicode.com/todos')
             .then(res => res.json())
-            .then(data => this.setState(prevState => ({array: data})))
+            .then(data => {
+                this.setState(prevState => ({array: data}));
+                console.log(this.state.array);
+            })
+        },4000)
     }
     render(){
+        console.log('render')
         return (
             <ul>
                 {this.state.array.map(item => {

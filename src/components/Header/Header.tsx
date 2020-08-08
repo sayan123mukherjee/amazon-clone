@@ -4,7 +4,7 @@ import HeaderSearchBar from './SearchBar/HeaderSearchBar'
 import MyAccount from './MyAccount/MyAccount'
 import Cart from './Cart/Cart'
 import './Header.scss';
-// import { dropDownDataType } from '../../types';
+import { dropDownDataType } from '../../types';
 
 interface IHeader{
     name: string;
