@@ -22,4 +22,6 @@ export type directoryData = {
 	id: number;
 	linkUrl: string;
 	size?: string;
+	history?: any;
+	match?: any;
 };
